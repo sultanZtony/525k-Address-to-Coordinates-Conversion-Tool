@@ -8,8 +8,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.FileWriter;
+// import java.io.FileReader;
+// import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
 import java.io.File;
@@ -23,13 +23,13 @@ import java.io.BufferedWriter;
 
 public class App {
 
-    private static final String API_KEY = "AIzaSyCH0QIG7gF1iKX_rq98qorinQXMEXrfdX0"; // Your API Key
+    private static final String API_KEY = "API_Key"; // Your API Key
     private static final HttpClient CLIENT = HttpClient.newHttpClient();
     private static final Gson GSON = new Gson();
 
     public static void main(String[] args) {
-        File csvInputFile = new File("C:\\Users\\sulta\\OneDrive\\Desktop\\Java\\demo\\src\\main\\java\\bmt\\Input_testing.csv");
-        File csvOutputFile = new File("C:\\Users\\sulta\\OneDrive\\Desktop\\Java\\demo\\src\\main\\java\\bmt\\coordinates2.csv");
+        File csvInputFile = new File(""); // Set your input file 
+        File csvOutputFile = new File(""); // Set your Ouput File
 
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(csvInputFile), StandardCharsets.UTF_8));
