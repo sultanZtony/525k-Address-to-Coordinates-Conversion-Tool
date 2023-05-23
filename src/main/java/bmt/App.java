@@ -8,8 +8,8 @@ import java.util.Arrays;
 public class App {
 
     public static void main(String[] args) {
-        File csvInputFile = new File("C:\\Users\\sulta\\OneDrive\\Desktop\\Java\\demo\\src\\main\\java\\bmt\\Input_testing.csv");
-        File csvOutputFile = new File("C:\\Users\\sulta\\OneDrive\\Desktop\\Java\\demo\\src\\main\\java\\bmt\\coordinates2.csv");
+        File csvInputFile = new File(""); // Set your input file 
+        File csvOutputFile = new File(""); // Set your Ouput File
 
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(csvInputFile), StandardCharsets.UTF_8));
